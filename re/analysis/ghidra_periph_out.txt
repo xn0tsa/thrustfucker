@@ -1,0 +1,48 @@
+2026-06-06 11:20:56 INFO  ExtractPeripherals.java> ADC1 (0x40012000): 3 pool entries, 2 functions  
+2026-06-06 11:20:56 INFO  ExtractPeripherals.java> ADC2 (0x40012100): 1 pool entries, 0 functions  
+2026-06-06 11:20:56 INFO  ExtractPeripherals.java> ADC_Common (0x40012300): 3 pool entries, 2 functions  
+2026-06-06 11:20:56 INFO  ExtractPeripherals.java> I2C1 (0x40005400): 1 pool entries, 1 functions  
+2026-06-06 11:20:56 INFO  ExtractPeripherals.java>   0x08008944  sz=2064   FUN_08008944  
+2026-06-06 11:20:56 INFO  ExtractPeripherals.java>   0x08010A68  sz=434    FUN_08010a68  
+2026-06-06 11:20:56 INFO  ExtractPeripherals.java>   0x08010A68  sz=434    FUN_08010a68  
+2026-06-06 11:20:56 INFO  ExtractPeripherals.java>   0x08010C34  sz=360    FUN_08010c34  
+2026-06-06 11:20:56 INFO  ExtractPeripherals.java>   0x08008944  sz=2064   FUN_08008944  
+2026-06-06 11:20:57 INFO  ExtractPeripherals.java> // 0x08008944  sz=2064  FUN_08008944  
+2026-06-06 11:20:57 INFO  ExtractPeripherals.java> ========================================================================  
+2026-06-06 11:20:57 INFO  ExtractPeripherals.java> // 0x08010A68  sz=434  FUN_08010a68  
+2026-06-06 11:20:57 INFO  ExtractPeripherals.java> ========================================================================  
+2026-06-06 11:20:57 INFO  ExtractPeripherals.java> // 0x08010C34  sz=360  FUN_08010c34  
+2026-06-06 11:20:57 INFO  ExtractPeripherals.java> ========================================================================  
+2026-06-06 11:21:53 INFO  ExtractPeripherals.java> ADC1 (0x40012000): 3 pool entries, 2 functions  
+2026-06-06 11:21:53 INFO  ExtractPeripherals.java> ADC2 (0x40012100): 1 pool entries, 0 functions  
+2026-06-06 11:21:53 INFO  ExtractPeripherals.java> ADC_Common (0x40012300): 3 pool entries, 2 functions  
+2026-06-06 11:21:53 INFO  ExtractPeripherals.java> I2C1 (0x40005400): 1 pool entries, 1 functions  
+2026-06-06 11:21:53 INFO  ExtractPeripherals.java>   0x08008944  sz=2064   FUN_08008944  
+2026-06-06 11:21:53 INFO  ExtractPeripherals.java>   0x08010A68  sz=434    FUN_08010a68  
+2026-06-06 11:21:53 INFO  ExtractPeripherals.java>   0x08010A68  sz=434    FUN_08010a68  
+2026-06-06 11:21:53 INFO  ExtractPeripherals.java>   0x08010C34  sz=360    FUN_08010c34  
+2026-06-06 11:21:53 INFO  ExtractPeripherals.java>   0x08008944  sz=2064   FUN_08008944  
+2026-06-06 11:21:53 INFO  ExtractPeripherals.java> Decompiling FUN_08008944 @ 0x8008944  
+2026-06-06 11:21:53 INFO  ExtractPeripherals.java> Decompiling FUN_08010a68 @ 0x8010a68  
+2026-06-06 11:21:53 INFO  ExtractPeripherals.java> Decompiling FUN_08010c34 @ 0x8010c34  
+2026-06-06 11:21:53 INFO  ExtractPeripherals.java> Done. 3 functions written.  
+2026-06-06 11:32:10 INFO  ExtractPeripherals.java> ADC1 (0x40012000): 3 pool entries, 2 functions  
+2026-06-06 11:32:10 INFO  ExtractPeripherals.java> ADC2 (0x40012100): 1 pool entries, 0 functions  
+2026-06-06 11:32:10 INFO  ExtractPeripherals.java> ADC_Common (0x40012300): 3 pool entries, 2 functions  
+2026-06-06 11:32:10 INFO  ExtractPeripherals.java> I2C1 (0x40005400): 1 pool entries, 1 functions  
+2026-06-06 11:32:10 INFO  ExtractPeripherals.java>   0x08008944  sz=2064   FUN_08008944  
+2026-06-06 11:32:10 INFO  ExtractPeripherals.java>   0x08010A68  sz=434    FUN_08010a68  
+2026-06-06 11:32:10 INFO  ExtractPeripherals.java>   0x08010A68  sz=434    FUN_08010a68  
+2026-06-06 11:32:10 INFO  ExtractPeripherals.java>   0x08010C34  sz=360    FUN_08010c34  
+2026-06-06 11:32:10 INFO  ExtractPeripherals.java>   0x08008944  sz=2064   FUN_08008944  
+2026-06-06 11:32:10 INFO  ExtractPeripherals.java> Decompiling FUN_08008944 @ 0x8008944  
+2026-06-06 11:32:11 INFO  ExtractPeripherals.java> Decompiling FUN_08010a68 @ 0x8010a68  
+2026-06-06 11:32:11 INFO  ExtractPeripherals.java> Decompiling FUN_08010c34 @ 0x8010c34  
+2026-06-06 11:32:11 INFO  ExtractPeripherals.java> Decompiling FUN_08006bb8 @ 0x8006bb8  
+2026-06-06 11:32:11 INFO  ExtractPeripherals.java> Decompiling FUN_08006d6a @ 0x8006d6a  
+2026-06-06 11:32:11 INFO  ExtractPeripherals.java> Decompiling FUN_08006838 @ 0x8006838  
+2026-06-06 11:32:11 INFO  ExtractPeripherals.java> Decompiling FUN_0801525e @ 0x801525e  
+2026-06-06 11:32:11 INFO  ExtractPeripherals.java> Decompiling FUN_08015040 @ 0x8015040  
+2026-06-06 11:32:11 INFO  ExtractPeripherals.java> Decompiling FUN_08012334 @ 0x8012334  
+2026-06-06 11:32:11 INFO  ExtractPeripherals.java> Decompiling FUN_0800881c @ 0x800881c  
+2026-06-06 11:32:11 INFO  ExtractPeripherals.java> Done. 10 functions written.  

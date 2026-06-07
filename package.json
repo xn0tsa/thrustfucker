@@ -1,0 +1,56 @@
+{
+  "name": "thrustfucker",
+  "version": "0.1.0",
+  "description": "TCA Sidestick X — Firmware launcher for pentesting modes",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "concurrently \"npm run vite\" \"npm run electron:wait\"",
+    "vite": "vite",
+    "electron:wait": "wait-on http://localhost:5173 && electron .",
+    "build": "vite build && electron-builder",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "serialport": "^13.0.0"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^4.0.4",
+    "@vitejs/plugin-react": "^4.2.0",
+    "concurrently": "^8.2.0",
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.0",
+    "vite": "^5.0.0",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.thrustfucker.app",
+    "productName": "ThrustFucker",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**",
+      "electron/**",
+      "assets/**"
+    ],
+    "extraResources": [
+      {
+        "from": "assets/firmware",
+        "to": "firmware"
+      },
+      {
+        "from": "assets/dfu-util.exe",
+        "to": ".",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    }
+  }
+}

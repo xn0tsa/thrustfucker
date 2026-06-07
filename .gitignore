@@ -1,0 +1,13 @@
+node_modules/
+dist/
+dist-electron/
+firmware/build/
+firmware/build_*/
+_cube_sparse/
+Drivers/
+tinyusb/
+re/ghidra_project/
+re/firmware/
+re/tools/
+*.log
+.env

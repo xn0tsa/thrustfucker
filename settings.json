@@ -1,0 +1,79 @@
+{
+  "cliPath": "C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin\\STM32_Programmer_CLI.exe",
+  "originalFw": "C:\\Users\\Sam\\TCA-Sidestick-X-Reverse\\firmware\\tca_sidestick_x_fw_ORIGINAL_512k.bin",
+  "lastFlashed": {
+    "id": "A-01",
+    "name": "RubberDucky",
+    "firmware": "A",
+    "at": 1780772709318
+  },
+  "mappings": [
+    {
+      "id": "1780852152712-0.8194014274931118",
+      "buttonIndex": 0,
+      "mode": {
+        "id": "A-01",
+        "firmware": "A",
+        "name": "RubberDucky",
+        "category": "Injection",
+        "description": "Full DuckyScript interpreter. Multiple payloads in flash, buttons to select, Hall axis for speed.",
+        "risk": "high",
+        "os": [
+          "windows",
+          "linux",
+          "macos"
+        ],
+        "exfil": [],
+        "configFields": [
+          {
+            "key": "script",
+            "type": "ducky",
+            "label": "DuckyScript payload",
+            "default": "DELAY 1000\nGUI r\nDELAY 500\nSTRING notepad\nENTER\nDELAY 500\nSTRING Hello from ThrustFucker!\nENTER"
+          },
+          {
+            "key": "speed",
+            "type": "range",
+            "label": "Delay between keystrokes (ms)",
+            "min": 1,
+            "max": 200,
+            "default": 50
+          },
+          {
+            "key": "triggerButton",
+            "type": "trigger",
+            "label": "Trigger button",
+            "default": 0
+          }
+        ],
+        "cheatSheet": {
+          "trigger": "Configured button (trigger by default)",
+          "controls": [
+            "X axis (Hall) → typing speed in real time",
+            "Button A → payload slot 1 (if multi-payloads)",
+            "Button B → payload slot 2",
+            "A + B (2 s)   → next slot"
+          ],
+          "leds": [
+            "Slow red = ready",
+            "Fast red = injecting",
+            "Green = done"
+          ]
+        }
+      },
+      "config": {
+        "script": "DELAY 1000\nGUI r\nDELAY 500\nSTRING notepad\nENTER\nDELAY 500\nSTRING Hello from ThrustFucker!\nENTER",
+        "speed": 50
+      }
+    }
+  ],
+  "firmwareClass": "A",
+  "globalConfig": {
+    "keyboardLayout": "AZERTY (FR)",
+    "keystrokeDelayMs": 60,
+    "driveLabel": "FORGE USB",
+    "webhookUrl": "",
+    "exfilMode": "Webhook HTTPS",
+    "aesKey": ""
+  }
+}

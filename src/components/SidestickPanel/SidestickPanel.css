@@ -1,0 +1,97 @@
+.sidestick {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sidestick-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  isolation: isolate;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.ss-lit-layer { pointer-events: none; }
+
+.ss-lit { animation: ss-appear 180ms ease-out both; }
+
+.ss-halo {
+  filter: url(#ss-glow);
+  opacity: 0.85;
+  animation: ss-pulse 1.8s ease-in-out infinite;
+}
+
+.ss-core {
+  mix-blend-mode: screen;
+  opacity: 0.42;
+}
+
+.ss-edge {
+  stroke-width: 2.5;
+  mix-blend-mode: screen;
+  opacity: 1;
+  animation: ss-pulse 1.8s ease-in-out infinite;
+}
+
+.ss-hotspot {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 2.5;
+  cursor: pointer;
+  outline: none;
+  transition: stroke 120ms ease, fill 120ms ease;
+}
+
+.ss-hotspot:hover,
+.ss-hotspot:focus-visible {
+  stroke: #ffffff;
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+.ss-hotspot.is-active {
+  stroke: var(--glow);
+  stroke-opacity: 0.35;
+}
+.ss-hotspot.is-active:hover,
+.ss-hotspot.is-active:focus-visible {
+  stroke: #ffffff;
+  stroke-opacity: 1;
+}
+
+/* Disabled zones (no Forge GPIO) */
+.ss-hotspot.is-disabled {
+  cursor: not-allowed;
+  fill: rgba(80, 80, 90, 0.08);
+  stroke: rgba(80, 80, 90, 0.25);
+  stroke-dasharray: 4 3;
+}
+.ss-hotspot.is-disabled:hover,
+.ss-hotspot.is-disabled:focus-visible {
+  fill: rgba(80, 80, 90, 0.15);
+  stroke: rgba(80, 80, 90, 0.45);
+}
+
+.sidestick-svg.is-debug .ss-hotspot {
+  stroke: var(--glow);
+  stroke-opacity: 0.95;
+  fill: var(--glow);
+  fill-opacity: 0.18;
+}
+
+@keyframes ss-pulse {
+  0%, 100% { opacity: 0.55; }
+  50%       { opacity: 0.95; }
+}
+
+@keyframes ss-appear {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ss-halo { animation: none; opacity: 0.8; }
+  .ss-lit  { animation: none; }
+}
